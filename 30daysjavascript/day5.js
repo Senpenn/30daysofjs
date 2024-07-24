@@ -91,7 +91,6 @@ function createGreeting(name, age) {
     return `Hello, ${name}! You are ${age} years old.`;
 }
 
-// Example usage:
 let name = "Sanjana";
 let age = 19;
 let greeting = createGreeting(name, age);
@@ -118,8 +117,6 @@ callMultipleTimes(sayHello, 3);
 //Task10:
 
 const composeFunctions = (func1, func2) => value => func2(func1(value));
-
-// Example usage:
 const double = x => x * 2;
 const increment = x => x + 1;
 
