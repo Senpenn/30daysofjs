@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Day 9 Tasks!!!</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        #myElement {
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">HELLO,WORLD!!!</h1>
+    <button onclick="changeText()">User</button>
+    <p class="hobby">I Love cats and i like to read in my free time.</p>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <button onclick="addNewDiv()">Add New Div</button>
+    <ul id="myList">
+        <li id="item1">Blackholes</li>
+        <li id="item2">Galaxies</li>
+        <li id="item3">theories</li>
+    </ul>
+    <button onclick="addNewListItem()">Add New List Item</button>
+    <button onclick="removeItem()">Remove Item 2</button>
+    <button onclick="removeLastChild()">Remove Last Item</button>
+    <img id="myImage" src="data:image/png;base64,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" alt="Initial Image" width="300">
+    <button onclick="changeImageSrc()">Change Image Source</button>
+    <p id="textElement">do you yk? there's no sound in space.</p>
+    <button onclick="addClass()">Add Class</button>
+    <button onclick="removeClass()">Remove Class</button>
+    <p id="textParagraph">Cats' whiskers are thicker than hair and have their own special functions.<br> They operate much like a compass or GPS, allowing a cat to sense space and move around in the dark without bumping into objects.</p>
+    <button onclick="changetxt()">change text</button>
+    <div id="myElement">Hover over me!</div>
+
+
+
+
+    <!-- Link to the external JavaScript file -->
+    <script src="day9.js"></script>
+</body>
+</html>
+
+
