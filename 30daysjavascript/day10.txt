@@ -1,0 +1,45 @@
+//Leetcode1:
+/**
+ * @param {integer} init
+ * @return { increment: Function, decrement: Function, reset: Function }
+ */
+var createCounter = function(init) {
+    // Define the current value as a variable within the closure
+    let count = init;
+
+    // Return an object with the increment, decrement, and reset methods
+    return {
+        increment: function() {
+            count += 1;
+            return count;
+        },
+        decrement: function() {
+            count -= 1;
+            return count;
+        },
+        reset: function() {
+            count = init;
+            return count;
+        }
+    };
+};
+
+/**
+ * Example usage:
+ * const counter = createCounter(5);
+ * console.log(counter.increment()); // 6
+ * console.log(counter.reset());    // 5
+ * console.log(counter.decrement()); // 4
+ */
+
+//Leetcode2:
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var map = function(arr, fn) {
+    // Use the Array.prototype.map method to apply `fn` to each element of `arr`
+    return arr.map(fn);
+};
