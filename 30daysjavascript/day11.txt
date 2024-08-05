@@ -1,0 +1,22 @@
+//Leetcode 1:
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+var filter = function(arr, fn) {
+  return arr.filter(fn);
+};
+
+//Leetcode 2:
+
+/**
+ * @param {number[]} nums
+ * @param {Function} fn
+ * @param {number} init
+ * @return {number}
+ */
+var reduce = function(nums, fn, init) {
+  return nums.reduce(fn, init);
+};
