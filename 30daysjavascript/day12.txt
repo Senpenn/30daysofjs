@@ -1,0 +1,30 @@
+//Leetcode 1:
+
+/**
+ * @param {Function[]} functions
+ * @return {Function}
+ */
+var compose = function(functions) {
+    return function(x) {
+        // Apply the functions from right to left
+        return functions.reduceRight((acc, func) => func(acc), x);
+    }
+};
+
+/**
+ * Example usage:
+ * const fn = compose([x => x + 1, x => 2 * x]);
+ * console.log(fn(4)); // Output: 9
+ */
+
+//Leetcode 2:
+
+var once = function(fn) {
+    let count = 0;
+    return function(...args){
+        if(count==0){
+            count+=1
+            return fn(...args);
+        }
+    }
+};
